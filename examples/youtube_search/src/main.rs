@@ -11,7 +11,7 @@ fn App() -> Html {
     let onclick = {
         let counter = counter.clone();
         move |_| {
-            let value = *counter + 1;
+            let value = * counter + 1;
             counter.set(value);
         }
     };
