@@ -16,11 +16,22 @@ fn App() -> Html {
         }
     };
 
+    let handle_input = Callback::from(|_| {});
+
     html! {
-        <div>
-            <button {onclick}>{ "+1" }</button>
-            <p>{ *counter }</p>
-        </div>
+        <main>
+            <div>
+                {"SEARHS"}
+            </div>
+            <div>
+                <input type="text" oninput={handle_input}/>
+            </div>
+            <div>
+                {"Button Counter"}
+                <button {onclick}>{ "+1" }</button>
+                <p>{ * counter }</p>
+            </div>
+        </main>
     }
 }
 
